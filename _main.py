@@ -14,3 +14,13 @@ print(5 + 5)
 print(5 - 5)
 print(5 * 5)
 print(5 / 5)
+
+name = "Hellen"
+print("my name is", name)
+
+name = "Hellen"
+print("my name is", name)
+
+name = "Hellen"
+age = 15
+print(name, "is", age)

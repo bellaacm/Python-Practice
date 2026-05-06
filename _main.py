@@ -8,4 +8,9 @@ print("i'm coding")
 input("Name?")
 print("Hello")
 
-i
+print("5" + "5")
+print("5" + "5.0")
+print(5 + 5)
+print(5 - 5)
+print(5 * 5)
+print(5 / 5)

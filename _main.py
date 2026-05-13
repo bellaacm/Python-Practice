@@ -31,3 +31,9 @@ print("He is " + str(age))
 
 age = input("Age?")
 print("Birth year:", 2026 - int(age) )
+
+print(5 + 5 == 10)
+print(5 + 5 == 8)
+print('hello' == 'hi')
+print(5 + 5 >=10)
+print(5 != 5)

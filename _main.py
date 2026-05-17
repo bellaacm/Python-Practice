@@ -37,3 +37,13 @@ print(5 + 5 == 8)
 print('hello' == 'hi')
 print(5 + 5 >=10)
 print(5 != 5)
+
+
+if 5 < 10:
+ print ('Less than 10')
+print('10 or more')
+
+if 5 < 10:
+ print('Less than 10')
+else:
+  print('10 or more')

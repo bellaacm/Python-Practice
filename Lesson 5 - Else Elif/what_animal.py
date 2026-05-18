@@ -11,9 +11,11 @@
 # Ask your user a question about themselves, giving them 2 options
 first_questionn=input('Would you like to go on walks with your pet?')
 # Check if they picked the first option
-if first_questionn == 'true':
-    print('')
+if first_questionn == 'yes':
+    print
 else:
+    print('')
+
 
 
 

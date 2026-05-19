@@ -1,57 +1,21 @@
-### WHAT ANIMAL ARE YOU QUIZ ###
 
-# FIRST, create a basic Flowchart using the FLowchart Shapes to plan the flow of your 'what animal are you' quiz. 
-# __________________________
+print("Welcome to the quiz where we find out the perfect animal for you!")\
 
-# Write a 'what animal are you' quiz. 
-# You can base this on the picture from last lesson, but make it simpler - 
-# 3 questions and 4 animals.
+# first question 
+first_question = input ('Would you like to go on walks with your pet?')
+if first_question == 'yes':
+ 
+ # second question 
+ second_question = input('Do you suit a more social pet?')
+ if second_question == 'yes':
+  print('you got a dog!')
+ else:
+  print('You got a ferret!')
 
-
-# Ask your user a question about themselves, giving them 2 options
-first_questionn=input('Would you like to go on walks with your pet?')
-# Check if they picked the first option
-if first_questionn == 'yes':
-    print
+# third question
 else:
-    print('')
-
-
-
-
-    # Ask the next question
-
-    # Check if they picked the first option
-
-        # Tell them they're animal 1
-
-    # Otherwise
-
-        # Tell them they're animal 2
-
-# Otherwise
-
-    # Ask the next question
-
-    # Check if they picked the first option
-
-        # Tell them they're animal 3
-
-    # Otherwise
-
-        # Tell them they're animal 4 
-
-# __________________________
-
-# EXTENSION
-# Extend the quiz so there are 8 possible animals
-# Create a Flowchart using the FLowchart Shapes to 
-
-# __________________________
-
-# EXTENSION 2
-# Create a 'Which ??? are you?' Quiz
-# This time allow all questions to have 4 possible answers (a,b,c and d) 
-# and tally how many times they choose each
-# Determine what they are at the end using the letter with the highest tally.
-# Eg. If they picked mostly As, maybe they are Pikachu.
+ third_question = input('Do you like soft animals? ')
+ if third_question == 'yes':
+  print('You got a cat!')
+ else:
+  print('You got a fish!')

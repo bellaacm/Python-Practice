@@ -48,12 +48,12 @@ if 5 < 10:
 else:
   print('10 or more')
 
-  if 5 < 10:
-   print('Less than 10')
-  if 5 < 20:
-   print('Less than 20')\
-   
-  if 5 < 10:
-   print ('less than 10')
-  elif 5 < 20:
-   print('Less than 20')
+
+print('hello'.upper())
+print('HELLO'.lower())
+
+if 'HELLO' == 'hello':
+ print('The same!')
+
+if 'HELLO'.lower() == 'hello':
+ print('the same!')

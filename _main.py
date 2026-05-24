@@ -57,3 +57,11 @@ if 'HELLO' == 'hello':
 
 if 'HELLO'.lower() == 'hello':
  print('the same!')
+
+ age = 10 
+ if age == 11 or 12:
+  print('Access granted')
+
+  age = 10
+  if age == 11 or age == 12:
+   print('Access granted')

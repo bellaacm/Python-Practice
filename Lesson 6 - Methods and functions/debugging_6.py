@@ -16,6 +16,7 @@ else passenger_row > 8:
 destination = input("Enter your destination code: ")
 if destination == "AKL" or destination == "WLG":
     print("Flight is delayed 5 minutes.")
+    
 # PSEUDOCODE START
 # IF NOT destination is equal to "CHC" THEN print "Flight is on time."
 # ELSE print "Flight has been cancelled"

@@ -12,7 +12,7 @@ if ready == 'yes':
 
 else:
    print("Come back when you're ready!")
-
+quit()
 
 ## SCORE
 

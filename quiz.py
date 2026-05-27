@@ -1,10 +1,17 @@
 ### QUIZ ###
-# this is a 10 question quiz involving a large variety of topics 
+# this is a 10 question quiz involving a large variety of general knowledge topics 
 
-# QUIZ INTRODUCTION 
+## QUIZ INTRODUCTION 
 name = input("What is your name?")
-print(f"hello {name}, welcome to this quiz!")
+print(f"Hello {name}, welcome to this quiz!")
 print("This will be a 10 question quiz assesing your general knowledge.")
+ready = input("Are you ready to begin?").strip().lower()
+
+if ready == 'yes':
+   print("Lets begin!")
+
+else:
+   print("Come back when you're ready!")
 
 
 ## SCORE
@@ -205,8 +212,7 @@ Tenth_question_answer = print("A group of crows are famously reffered to as a 'm
 # outro
 print("This is the end of the quiz.")
 input("How many questions did you answer correctly?")
-print(f"Congratulations! Thank you {name} for participating in this quiz :)" )
-
+print(f"Congratulations! Thank you {name} for participating in this quiz :)")
 
 
 

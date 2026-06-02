@@ -12,6 +12,9 @@ print()
 score = 0
 
 
+
+
+
 ## QUESTION 1
 print("First question:")
 first_question = input("What is the worlds tallest building?")
@@ -119,7 +122,7 @@ else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
 
-fifth_question_answer = print("The highest rated TV show is Breaking Bad.")
+fifth_question_answer = print("The highest rated TV show is Breaking Bad with a rating of 9.5/10 on IMDB.")
 print()
 
 

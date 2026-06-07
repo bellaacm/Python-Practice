@@ -7,7 +7,7 @@ colour = input("Name a colour")
 # Ask user for an object and save it in a variable
 object = input("Name an object")
 # Print your madlib using the 4 variables above.
-print( name + " chose the animal " + animal, " the colour " + colour, "and the object " + object )
+print( name + " chose the animal " + animal, " the colour " + colour, "andbella the object " + object )
 # ----------------------------
 
 # EXTENSION

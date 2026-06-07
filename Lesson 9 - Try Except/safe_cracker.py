@@ -35,7 +35,7 @@ while True:
     try:
         int(user_input)
     except ValueError:
-        print("Error: The safe only accepts digits.")
+        print("Error! The safe only accepts digits.")
         print("try again")
         continue
 

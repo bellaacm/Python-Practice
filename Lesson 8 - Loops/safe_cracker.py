@@ -31,11 +31,12 @@ while True:
     # -----------------------------------------------------------------
     # SCENARIO B: Invalid Input
     # -----------------------------------------------------------------
-    
+
     try:
         int(user_input)
     except ValueError:
-        print("Error: Safe only accepts digits. Try again.")
+        print("Error: The safe only accepts digits.")
+        print("try again")
         continue
 
     # -----------------------------------------------------------------

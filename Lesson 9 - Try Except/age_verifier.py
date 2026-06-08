@@ -5,17 +5,13 @@
 # =====================================================================
 
 # VARIABLES
-# TODO Create a variable for valid input and set it to false
 valid_input = False
-
-# GET INPUT
-# TODO Start a loop while the input is invalid
 
 while not valid_input:
     user_age = input("What is your age?")
 
     try:
-        use_age: int(user_age)
+        user_age = int(user_age)
         valid_input = True
     except ValueError:
         print("Invalid Input! please enter a number")
@@ -23,61 +19,5 @@ while not valid_input:
 
 if user_age >= 18:
     print("You have access")
-
 else:
     print("Access denied")
-
-#           Keep asking for input until they've given a valid age
-# =====================================================================
-
-# VARIABLES
-# TODO Create a variable for valid input and set it to false
-
-# GET INPUT
-# TODO Start a loop while the input is invalid
-
-    # TODO Ask the user for their age and save it
-
-    #TRY
-    # TODO Create a try statement
-        # TODO Change the input into an integer and resave it
-        # TODO Set the valid input variable to true
-
-    # FAIL TO CONVERT TO INTEGER
-    # TODO Add an except statement
-    # TODO Tell the user their input was invalid
-
-# Unindented = Loop has finished so the input must be valid now
-
-# CHECK AGE
-# TODO Check if they are older than 18 and tell them they have access if they are
-# TODO Check if they are older than 13 and tell them they have partial access if they are.
-# TODO Otherwise tell them access has been denied
-
-
-# ===================================================================
-# EXTENSION
-# Create a avatar creator for them to use if they get access. There should be 2 versions (full and partial)
-# Eg. Full can choose: character class (warrior, rogue), hair colour, eye colour; partial just character class (with animal classes?)
-
-    #TRY
-    # TODO Create a try statement
-        # TODO Change the input into an integer and resave it
-        # TODO Set the valid input variable to true
-
-    # FAIL TO CONVERT TO INTEGER
-    # TODO Add an except statement
-    # TODO Tell the user their input was invalid
-
-# Unindented = Loop has finished so the input must be valid now
-
-# CHECK AGE
-# TODO Check if they are older than 18 and tell them they have access if they are
-# TODO Check if they are older than 13 and tell them they have partial access if they are.
-# TODO Otherwise tell them access has been denied
-
-
-# ===================================================================
-# EXTENSION
-# Create a avatar creator for them to use if they get access. There should be 2 versions (full and partial)
-# Eg. Full can choose: character class (warrior, rogue), hair colour, eye colour; partial just character class (with animal classes?)

@@ -39,8 +39,12 @@ while True:
         item_name = input("Enter item name: ")
         shopping_cart.append(item_name)
         item_price = input("Enter item price: ")
-        item_price = float(item_price)
-        price_list.append(item_price)
+        try:
+            item_price = float(item_price)
+        except ValueError:
+            print("Invalid price.")
+        else:
+            price_list.append(item_price)
 
     # -----------------------------------------------------------------
     # OPTION 2: REMOVE ITEM 
@@ -51,11 +55,14 @@ while True:
         # TODO Remove the item from cart
         # TODO Remove the price (using its index) from the price list
 
-if option == '2':
-    item_name = input ('Enter the name of the item you want to remove: ')
-    item_index = shopping_cart.index(item_name)  
-    shopping_cart.pop(item_index)
-    price_list.pop(item_index) 
+    elif option == '2':
+        item_name = input('Enter the name of the item you want to remove: ')
+        if item_name in shopping_cart:
+            item_index = shopping_cart.index(item_name)
+            shopping_cart.pop(item_index)
+            price_list.pop(item_index)
+        else:
+            print('Item not found in cart.')
     
      # -----------------------------------------------------------------
     # OPTION 3: CLEAR CART (Practice clearing a list)
@@ -64,10 +71,10 @@ if option == '2':
         # TODO: Use the .clear() method on both lists to empty them out.
         # TODO Tell them their cart is empty.
 
-if option == '3':
-    shopping_cart.clear()
-    price_list.clear()
-    print('Your cart is now empty.')
+    elif option == '3':
+        shopping_cart.clear()
+        price_list.clear()
+        print('Your cart is now empty.')
 
     # -----------------------------------------------------------------
     # OPTION 4: CHECKOUT
@@ -78,14 +85,14 @@ if option == '3':
         # TODO Display the results
         # TODO Exit the loop (to exit the program)
 
-if option == '4':
-    total_cost = sum(price_list)
-    print(total_cost)
-    exit
-
-else:
-    print("Option is invalid")
-    print("Try again")
+    elif option == '4':
+        total_cost = sum(price_list)
+        print('Checking out. Goodbye!')
+        break
+    
+    else:
+        print("Option is invalid")
+        print("Try again")
    
 # ====================================================================
 # EXTENSION

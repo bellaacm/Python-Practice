@@ -19,19 +19,28 @@ while True:
     print("Current cart:", shopping_cart)
     # Current prices
     print("Current prices:", price_list)
-    
+
     # TODO Output Options for user: 1. Add item to cart, 2. Remove item from cart, 3. Clear cart and restart, 4. View total and checkout
     # TODO Get user input (1-4) and save in variable
+    print("1. Add item to cart, 2. Remove item from cart, 3. Clear cart and restart, 4. View total and checkout")
+    option = input("Choose an option (1-4): ")
 
     # -----------------------------------------------------------------
     # OPTION 1: ADD ITEM 
     # -----------------------------------------------------------------
-    # TODO Check if option 1
+    # TODO Check if option 1 
         # TODO Ask user for the name of the item
         # TODO Add it to shopping list
         # TODO Add user for price of item
         # TODO Change price into a float
         # TODO Add price to price list
+
+    if option == '1':
+        item_name = input("Enter item name: ")
+        shopping_cart.append(item_name)
+        item_price = input("Enter item price: ")
+        item_price = float(item_price)
+        price_list.append(item_price)
 
     # -----------------------------------------------------------------
     # OPTION 2: REMOVE ITEM 
@@ -42,30 +51,42 @@ while True:
         # TODO Remove the item from cart
         # TODO Remove the price (using its index) from the price list
 
-
-    # -----------------------------------------------------------------
+if option == '2':
+    item_name = input ('Enter the name of the item you want to remove: ')
+    item_index = shopping_cart.index(item_name)  
+    shopping_cart.pop(item_index)
+    price_list.pop(item_index) 
+    
+     # -----------------------------------------------------------------
     # OPTION 3: CLEAR CART (Practice clearing a list)
     # -----------------------------------------------------------------
     # TODO Else check if option 3
         # TODO: Use the .clear() method on both lists to empty them out.
         # TODO Tell them their cart is empty.
 
+if option == '3':
+    shopping_cart.clear()
+    price_list.clear()
+    print('Your cart is now empty.')
 
     # -----------------------------------------------------------------
     # OPTION 4: CHECKOUT
     # -----------------------------------------------------------------
     # TODO Else check if option 4
-    total_cost = sum(price_list)
+
         
         # TODO Display the results
         # TODO Exit the loop (to exit the program)
 
-    # -----------------------------------------------------------------
-    # NO OPTION
-    # -----------------------------------------------------------------
-    # TODO Otherwise
-        # TODO Tell them that option isn't valid
+if option == '4':
+    total_cost = sum(price_list)
+    print(total_cost)
+    exit
 
+else:
+    print("Option is invalid")
+    print("Try again")
+   
 # ====================================================================
 # EXTENSION
 # Add a budget to the list

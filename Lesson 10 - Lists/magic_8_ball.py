@@ -20,7 +20,6 @@ print('Welcome to this 8 ball magic fortune teller!')
 while True:
     question = input("Ask a yes/no question about your future. (Type 'quit' to exit) ")
     if question.lower().strip() == 'quit':
-        print('See you later')
         break
 
     # TODO: Ask the user to type in a Yes/No question about their future and save it in a variable.
@@ -34,16 +33,18 @@ while True:
     #       Use random.randint() to get a number between 0 and that last index.
     #       Save it in a variable called 'random_index'.
     
-random_index = random.randint(0,7)
+    random_index = random.randint(0,7)
     
     # TODO: Step B: Use your 'random_index' to grab the matching answer 
     #       out of your 'responses' list.
     #       Save it in a variable called 'chosen_fortune'.
-chosen_fortune = random_index
+    chosen_fortune = random_index
     # TODO Print the result
-print(response_list[chosen_fortune])
+    print(response_list[chosen_fortune])
+
 # TODO Say goodbye to let them know the program has ended.
-print("Goodbye! Thanks for playing")
+print("See you later!")
+
 # ==================================================
 # EXTENSION
 # Common and rare responses

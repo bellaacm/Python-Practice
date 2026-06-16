@@ -75,15 +75,17 @@ while play:
     fifth_guess = input("Insert your fifth guess:")
     while len(fifth_guess) != 5:
 
-        if fifth_guess > 5:
-            print("try again")
-
-        elif fifth_guess == word_list:
+        if fifth_guess == word_list:
             print("You got the word!")
+            break
+
+        else:
+            print("You've run out of attempts. Better luck next time!")
             break
 
 
         # TODO Check if the current letter of user_input (user_input[i]) is the same as the i letter of the word and if it is tell them they got that letter correct
+    
         
 
         # TODO Otherwise check if the current letter of user_input is in the word and if it is, tell them that letter is in the wrong position

@@ -90,10 +90,11 @@ def inventory():
             print(item)
 
 def main():
-    print("Here is a menu of some of my previous projects:")
+
+   print("Here is a menu of some of my previous projects:")
 
 while True:
-    user_choice = input("If you would like to run the rectangle area/circumference calculator enter 1.", "If you would like to run the security program enter 2.", "If you would like to run the inventory program press 3.")
+    user_choice = input("If you would like to run the rectangle area/circumference calculator enter 1. If you would like to run the security program enter 2. If you would like to run the inventory program press 3.")
 
     if user_choice == "1":
             rectangle_calculator()

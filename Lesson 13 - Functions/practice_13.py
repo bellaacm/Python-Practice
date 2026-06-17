@@ -3,12 +3,6 @@ PROGRAM: Geometry Helper
 This program helps to calculate the area and circumference of a rectangle
 """
 
-####### INSTRUCTIONS ########
-# Complete the code by writing a function for calculating the circumference, 
-# and calling each calculate function based on user choice
-
-
-# Calculate the area of a rectangle based on length and width from user
 def calculate_area():
     length = int(input("What is the length?"))
     width = int(input("What is the width?"))
@@ -20,9 +14,7 @@ def calculate_circumference():
     width = int(input("What is the width?"))
     print(f"The circumference is {length * 2 + width * 2}.")
 
-# =====================================================================
-# EXECUTION
-# =====================================================================
+
 def main():
 
     # introduction 

@@ -1,8 +1,9 @@
+
 banned_items = ["slingshot","laser"]
 inventory = ["apple","slingshot","book","laser"]
 confiscated = []
 
-print(f"Scanning inventory: (inventory)")
+print(f"Scanning inventory: {inventory}")
 
 for item in inventory:
  if item in banned_items:

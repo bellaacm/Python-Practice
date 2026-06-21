@@ -1,5 +1,10 @@
+def check_play():
+    play = input("Do you want to play again")
 
-for food in ['apples','carrots','muesli']:
-    print(food)
-
+    if play.lower() in ["y","yes"]:
+        return True
+    else:
+        return False
     
+check_play()
+ 

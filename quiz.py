@@ -2,28 +2,38 @@
 # this is a 10 question quiz involving a large variety of general knowledge topics 
 
 ## QUIZ INTRODUCTION 
+
 name = input("What is your name?")
 print(f"Hello {name}, welcome to this quiz!")
 print("This will be a 10 question quiz assesing your general knowledge.")
+print("You will have to enter the letter of your answer from the given options. ( ex:'a' or 'd')")
 print("( •̀ ᗜ •́ )ᕗ")
-print()
+
+def ready():
+    
+    while True:
+        ready = input("Are you ready to begin?")
+        
+        if ready in ["yes","y","sure","ready", "yeah"]:
+           print("Great! let's begin.")
+           break
+
+        else:
+            print("Come back when you're ready!")
+            exit
+ready()
 
 ## SCORE
 score = 0
 
-
-
-
-
 ## QUESTION 1
 print("First question:")
-first_question = input("What is the worlds tallest building?")
+first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
+first_question = first_question.strip().lower()
 print()
 
-first_question = first_question.strip().lower()
-
-# OUTPUT
-if first_question == 'the burj khalifa' or first_question == 'burj khalifa':
+# QUESTION 1 ANSWER
+if first_question == 'a':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
@@ -40,13 +50,12 @@ print()
 
 ## QUESTION 2
 print("Second question:")
-second_question = input("What is the largest ocean on Earth?")
+second_question = input("What is the largest ocean on Earth? a) Atlantic Ocean, b) Southern Ocean, c) Pacific Ocean, d) Arctic Ocean")
+second_question = second_question.strip().lower()
 print()
 
-second_question = second_question.strip().lower()
-
 # OUTPUT
-if second_question == 'the pacific ocean' or second_question == 'pacific ocean' or second_question == 'pacific':
+if second_question == 'c':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
@@ -62,13 +71,12 @@ print()
 
 ## QUESTION 3
 print("Third question:")
-third_question = input("Who was the first person to walk on the moon?")
+third_question = input("Who was the first person to walk on the moon? a) Valentina Tereshkova, b) Neil Armstrong, c) John Glenn, d) Yuri Gagarin")
+third_question = third_question.strip().lower()
 print()
 
-third_question = third_question.strip().lower()
-
-# OUTPUT
-if third_question == 'neil armstrong':
+# QUESTION 3 ANSWER
+if third_question == 'b':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
@@ -84,17 +92,15 @@ print()
 
 ## QUESTION 4
 print("Fourth question:")
-fourth_question = input("Which superhero is known as the 'Man of Steel'?")
+fourth_question = input("Which superhero is known as the 'Man of Steel'? a) Batman, b) Wonder Woman, c) Superman, d) Green Lantern")
+fourth_question = fourth_question.strip().lower()
 print()
 
-fourth_question = fourth_question.strip().lower()
-
-# OUTPUT
-if fourth_question == 'superman':
+# QUESTION 4 ANSWER 
+if fourth_question == 'c':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -107,17 +113,15 @@ print()
 
 ## QUESTION 5
 print("Fifth question:")
-fifth_question = input("What is the highest rated TV show?")
+fifth_question = input("What is the highest rated TV show? a) Breaking Bad, b) Black Mirror, c) Stranger Things, d) Dark")
+fifth_question = fifth_question.strip().lower()
 print()
 
-fifth_question = fifth_question.strip().lower()
-
 # OUTPUT
-if fifth_question == 'breaking bad':
+if fifth_question == 'a':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -130,17 +134,15 @@ print()
 
 ## QUESTION 6 
 print("Sixth question:")
-Sixth_question = input("How many days does it take for the Earth to orbit the Sun?")
+Sixth_question = input("How many days does it take for the Earth to orbit the Sun? a) 350, b) 256, c)366, d) 356")
+Sixth_question = Sixth_question.strip().lower()
 print()
 
-Sixth_question = Sixth_question.strip().lower()
-
-# OUTPUT
-if Sixth_question == '365':
+# QUESTION 4 ANSWER
+if Sixth_question == 'd':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -153,17 +155,15 @@ print()
 
 # QUESTION 7
 print("Seventh question:")
-Seventh_question = input("What are the two national animals of Australia?")
+Seventh_question = input("What are the two national animals of Australia? a) Kangaroo & Koala, b) Platypus & Emu, c) Kangaroo & Emu, d) Crocodile & Koala")
+Seventh_question = Seventh_question.strip().lower()
 print()
 
-Seventh_question = Seventh_question.strip().lower()
-
 # OUTPUT 
-if Seventh_question == 'red kangaroo and emu':
+if Seventh_question == 'c':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -176,17 +176,15 @@ print()
 
 ## QUESTION 8 
 print("Eighth question:")
-Eighth_question = input("Which artist painted the ceiling of the Sistine Chapel in Rome?")
+Eighth_question = input("Which artist painted the ceiling of the Sistine Chapel in Rome? a) Leonardo da Vinci, b) Michelangelo, c) Raphael, d) Rembrandt van Rijn")
+Eighth_question = Eighth_question.strip().lower()
 print()
 
-Eighth_question = Eighth_question.strip().lower()
-
 # OUTPUT
-if Eighth_question == 'michelangelo':
+if Eighth_question == 'b':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -199,16 +197,15 @@ print()
 
 ## QUESTION 9
 print("Ninth question:")
-Ninth_question = input("What is the only body part fully grown from birth?")
-print()
+Ninth_question = input("What is the only body part fully grown from birth? a) eyes, b) nose, c) tongue, d) ears")
 Ninth_question = Ninth_question.strip().lower()
+print()
 
 # OUTPUT
-if Ninth_question == 'eyes':
+if Ninth_question == 'a':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -222,17 +219,15 @@ print()
 
 ## QUESTION 10 
 print("Tenth and final question:")
-Tenth_question = input("What are a groups of crows called?")
+Tenth_question = input("What are a groups of crows called? a) a gaggle, b) a parliment, c) a flamboyance, d) a murder")
+Tenth_question = Tenth_question.strip().lower()
 print()
 
-Tenth_question = Tenth_question.strip().lower()
-
 # OUTPUT
-if Tenth_question == 'murder':
+if Tenth_question == 'd':
    print("Good job!")
    print("◝(ᵔᗜᵔ)◜")
    score += 1
-
 else:
    print("Incorrect!")
    print("(ó﹏ò｡)")
@@ -247,7 +242,6 @@ print(f"You got {score} out of 10.")
 print()
 print(f"Congratulations! Thank you {name} for participating in this quiz")
 print("(ㅅ´ ˘ `)")
-
 
 
 

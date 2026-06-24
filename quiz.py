@@ -28,27 +28,35 @@ ready()
 ## SCORE 
 score = 0
 
+## ANSWER OPTIONS 
+answer_options = ["a","b","c","d"]
+
 ## QUIZ MAIN FUNCTION
 def main():
     
-    ## QUESTION 1
-    print()
-    print("First question:")
-    first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
-    first_question = first_question.strip().lower()
-    print()
+## QUESTION 1
+ print()
+print("First question:")
+first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
+first_question = first_question.strip().lower()
+print()
 
     # QUESTION 1 ANSWER
-    if first_question == 'a':
-        print("Good job!")
-        print("◝(ᵔᗜᵔ)◜")
-        score += 1
+if first_question == 'a':
+   print("Good job!")
+   print("◝(ᵔᗜᵔ)◜")
+   score += 1
 
-    else:
+elif first_question not in answer_options:
+  print("answer not applicable. Try again: ")
+  
+
+
+else:
         print("Incorrect!")
         print("(ó﹏ò｡)")
 
-    first_question_answer = print("As of 2026, the worlds tallest building is The Burj Khalifa in Dubai.")
+first_question_answer = print("As of 2026, the worlds tallest building is The Burj Khalifa in Dubai.")
 print()
 
 
@@ -253,7 +261,7 @@ while True:
     
     if replay in ["yes","y","ye","sure","ready", "yeah","absolutely","definitely"]:
          main()
-         
+
     else:
         print("See you next time!")
         break

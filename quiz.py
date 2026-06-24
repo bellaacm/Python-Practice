@@ -5,47 +5,51 @@
 
 name = input("What is your name?")
 print(f"Hello {name}, welcome to this quiz!")
+print()
 print("This will be a 10 question quiz assesing your general knowledge.")
 print("You will have to enter the letter of your answer from the given options. ( ex:'a' or 'd')")
 print("( •̀ ᗜ •́ )ᕗ")
+print()
 
 def ready():
     
-    while True:
-        ready = input("Are you ready to begin?")
-        
-        if ready in ["yes","y","sure","ready", "yeah"]:
+ while True:
+    ready = input("Are you ready to begin?").strip().lower() 
+      
+    if ready in ["yes","y","ye","sure","ready", "yeah","absolutely","definitely"]:
            print("Great! let's begin.")
-           break
+           return
 
-        else:
+    else:
             print("Come back when you're ready!")
             exit
 ready()
 
-## SCORE
+## SCORE 
 score = 0
 
-## QUESTION 1
-print("First question:")
-first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
-first_question = first_question.strip().lower()
+## QUIZ MAIN FUNCTION
+def main():
+    
+    ## QUESTION 1
+    print()
+    print("First question:")
+    first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
+    first_question = first_question.strip().lower()
+    print()
+
+    # QUESTION 1 ANSWER
+    if first_question == 'a':
+        print("Good job!")
+        print("◝(ᵔᗜᵔ)◜")
+        score += 1
+
+    else:
+        print("Incorrect!")
+        print("(ó﹏ò｡)")
+
+    first_question_answer = print("As of 2026, the worlds tallest building is The Burj Khalifa in Dubai.")
 print()
-
-# QUESTION 1 ANSWER
-if first_question == 'a':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
-
-else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
-
-first_question_answer = print("As of 2026, the worlds tallest building is The Burj Khalifa in Dubai.")
-print()
-
-
 
 
 ## QUESTION 2
@@ -54,15 +58,15 @@ second_question = input("What is the largest ocean on Earth? a) Atlantic Ocean, 
 second_question = second_question.strip().lower()
 print()
 
-# OUTPUT
+    # OUTPUT
 if second_question == 'c':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+    print("Good job!")
+    print("◝(ᵔᗜᵔ)◜")
+    score += 1
 else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
-   
+    print("Incorrect!")
+    print("(ó﹏ò｡)")
+        
 second_question_answer = print("The largest ocean on Earth is the Pacific Ocean.")
 print()
 
@@ -77,12 +81,12 @@ print()
 
 # QUESTION 3 ANSWER
 if third_question == 'b':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+    print("Good job!")
+    print("◝(ᵔᗜᵔ)◜")
+    score += 1
 else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
+  print("Incorrect!")
+  print("(ó﹏ò｡)")
 
 third_question_answer = print("The first person to walk on the moon was Neil Armstrong.")
 print()
@@ -138,15 +142,15 @@ Sixth_question = input("How many days does it take for the Earth to orbit the Su
 Sixth_question = Sixth_question.strip().lower()
 print()
 
-# QUESTION 4 ANSWER
+    # QUESTION 6 ANSWER
 if Sixth_question == 'd':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+        print("Good job!")
+        print("◝(ᵔᗜᵔ)◜")
+        score += 1
 else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
-   
+        print("Incorrect!")
+        print("(ó﹏ò｡)")
+        
 Sixth_question_answer = print("It takes 365 days for the Earth to orbit the Sun.")
 print()
 
@@ -159,14 +163,14 @@ Seventh_question = input("What are the two national animals of Australia? a) Kan
 Seventh_question = Seventh_question.strip().lower()
 print()
 
-# OUTPUT 
+    # OUTPUT 
 if Seventh_question == 'c':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+        print("Good job!")
+        print("◝(ᵔᗜᵔ)◜")
+        score += 1
 else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
+        print("Incorrect!")
+        print("(ó﹏ò｡)")
 
 Seventh_question_answer = print("The red kangaroo and the emu are the two national animals of Austrailia.")
 print()
@@ -180,14 +184,14 @@ Eighth_question = input("Which artist painted the ceiling of the Sistine Chapel 
 Eighth_question = Eighth_question.strip().lower()
 print()
 
-# OUTPUT
+    # OUTPUT
 if Eighth_question == 'b':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+        print("Good job!")
+        print("◝(ᵔᗜᵔ)◜")
+        score += 1
 else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
+        print("Incorrect!")
+        print("(ó﹏ò｡)")
 
 Eighth_question_answer = print("Michelangelo painted the ceiling of the Sistine Chapel in Rome.")
 print()
@@ -201,14 +205,14 @@ Ninth_question = input("What is the only body part fully grown from birth? a) ey
 Ninth_question = Ninth_question.strip().lower()
 print()
 
-# OUTPUT
+    # OUTPUT
 if Ninth_question == 'a':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+        print("Good job!")
+        print("◝(ᵔᗜᵔ)◜")
+        score += 1
 else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
+        print("Incorrect!")
+        print("(ó﹏ò｡)")
 
 Ninth_question_answer = print("The only body part fully grown from birth are your eyes.")
 print()
@@ -235,13 +239,25 @@ else:
 Tenth_question_answer = print("A group of crows are famously reffered to as a 'murder'.")
 print()
 
-
-# OUTRO
+    # OUTRO
 print("This is the end of the quiz.")
-print(f"You got {score} out of 10.")
+print(f"You scored {score} out of 10.") 
 print()
 print(f"Congratulations! Thank you {name} for participating in this quiz")
 print("(ㅅ´ ˘ `)")
+print()
+
+# REPLAY LOOP
+while True:
+    replay = input("Would you like to play again? ∘ ∘ ∘ ( °ヮ° )").lower().strip()
+    
+    if replay in ["yes","y","ye","sure","ready", "yeah","absolutely","definitely"]:
+         main()
+         
+    else:
+        print("See you next time!")
+        break
+
 
 
 

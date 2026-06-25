@@ -122,7 +122,7 @@ while True:
      else:
       print("Incorrect!")
       print("(ó﹏ò｡)")
-
+       
       print("The first person to walk on the moon was Neil Armstrong.")
       print()
      break
@@ -154,8 +154,8 @@ while True:
       print("Incorrect!")
       print("(ó﹏ò｡)")
  
-      fourth_question_answer = print("Superman is known as the 'Man of Steel'.")
-      print()
+     print("Superman is known as the 'Man of Steel'.")
+     print()
      break
 
 
@@ -163,105 +163,145 @@ while True:
 
 ## QUESTION 5
 print("Fifth question:")
-fifth_question = input("What is the highest rated TV show? a) Breaking Bad, b) Black Mirror, c) Stranger Things, d) Dark")
-fifth_question = fifth_question.strip().lower()
-print()
 
-# OUTPUT
-if fifth_question == 'a':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
-else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
+while True:
+     fifth_question = input("What is the highest rated TV show? a) Breaking Bad, b) Black Mirror, c) Stranger Things, d) Dark")
+     fifth_question = fifth_question.strip().lower()
+     print()
 
-fifth_question_answer = print("The highest rated TV show is Breaking Bad with a rating of 9.5/10 on IMDB.")
-print()
+# QUESTION 5 ANSWER
+     if fifth_question not in answer_options:
+          print("Answer is not applicable. Please enter a, b, c or d.")
+          print()
+          continue
+
+     if fifth_question == 'a':
+      print("Good job!")
+      print("◝(ᵔᗜᵔ)◜")
+      score += 1
+     else:
+      print("Incorrect!")
+      print("(ó﹏ò｡)")
+
+      print("The highest rated TV show is Breaking Bad with a rating of 9.5/10 on IMDB.")
+      print()
+     break
 
 
 
 
 ## QUESTION 6 
 print("Sixth question:")
-Sixth_question = input("How many days does it take for the Earth to orbit the Sun? a) 350, b) 256, c)366, d) 356")
-Sixth_question = Sixth_question.strip().lower()
-print()
+
+while True:
+     Sixth_question = input("How many days does it take for the Earth to orbit the Sun? a) 350, b) 256, c)356, d) 365")
+     Sixth_question = Sixth_question.strip().lower()
+     print()
 
     # QUESTION 6 ANSWER
-if Sixth_question == 'd':
+     if Sixth_question not in answer_options:
+         print("Answer is not applicable. Please enter a, b, c or d.")
+         print()
+         continue
+     
+     if Sixth_question == 'd':
         print("Good job!")
         print("◝(ᵔᗜᵔ)◜")
         score += 1
-else:
+     else:
         print("Incorrect!")
         print("(ó﹏ò｡)")
-        
-Sixth_question_answer = print("It takes 365 days for the Earth to orbit the Sun.")
-print()
+     
+     print("It takes 365 days for the Earth to orbit the Sun.")
+     print()
+     break
 
 
 
 
 # QUESTION 7
 print("Seventh question:")
-Seventh_question = input("What are the two national animals of Australia? a) Kangaroo & Koala, b) Platypus & Emu, c) Kangaroo & Emu, d) Crocodile & Koala")
-Seventh_question = Seventh_question.strip().lower()
-print()
 
-    # OUTPUT 
-if Seventh_question == 'c':
+while True:
+     Seventh_question = input("What are the two national animals of Australia? a) Kangaroo & Koala, b) Platypus & Emu, c) Kangaroo & Emu, d) Crocodile & Koala")
+     Seventh_question = Seventh_question.strip().lower()
+     print()
+
+# QUESTION 7 ANSWER
+     if Seventh_question not in answer_options:
+         print("Answer is not applicable. Please enter a, b, c or d.")
+         print()
+         continue
+
+     if Seventh_question == 'c':
         print("Good job!")
         print("◝(ᵔᗜᵔ)◜")
         score += 1
-else:
+     else:
         print("Incorrect!")
         print("(ó﹏ò｡)")
 
-Seventh_question_answer = print("The red kangaroo and the emu are the two national animals of Austrailia.")
-print()
+     print("The red kangaroo and the emu are the two national animals of Austrailia.")
+     print()
+     break
 
 
 
 
 ## QUESTION 8 
 print("Eighth question:")
-Eighth_question = input("Which artist painted the ceiling of the Sistine Chapel in Rome? a) Leonardo da Vinci, b) Michelangelo, c) Raphael, d) Rembrandt van Rijn")
-Eighth_question = Eighth_question.strip().lower()
-print()
 
-    # OUTPUT
-if Eighth_question == 'b':
+while True:
+     Eighth_question = input("Which artist painted the ceiling of the Sistine Chapel in Rome? a) Leonardo da Vinci, b) Michelangelo, c) Raphael, d) Rembrandt van Rijn")
+     Eighth_question = Eighth_question.strip().lower()
+     print()
+
+# QUESTION 8 ANSWER
+     if Eighth_question not in answer_options:
+         print("Answer is not applicable. Please enter a, b, c or d.")
+         print()
+         continue
+     
+     if Eighth_question == 'b':
         print("Good job!")
         print("◝(ᵔᗜᵔ)◜")
         score += 1
-else:
+     else:
         print("Incorrect!")
         print("(ó﹏ò｡)")
 
-Eighth_question_answer = print("Michelangelo painted the ceiling of the Sistine Chapel in Rome.")
-print()
+     print("Michelangelo painted the ceiling of the Sistine Chapel in Rome.")
+     print()
+     break
 
 
 
 
 ## QUESTION 9
 print("Ninth question:")
-Ninth_question = input("What is the only body part fully grown from birth? a) eyes, b) nose, c) tongue, d) ears")
-Ninth_question = Ninth_question.strip().lower()
-print()
 
-    # OUTPUT
-if Ninth_question == 'a':
+while True:
+     Ninth_question = input("What is the only body part fully grown from birth? a) eyes, b) nose, c) tongue, d) ears")
+     Ninth_question = Ninth_question.strip().lower()
+     print()
+
+# QUESTION 9 ANSWER 
+     if Ninth_question not in answer_options:
+         print("Answer is not applicable. Please enter a, b, c or d.")
+         print()
+         continue
+
+     if Ninth_question == 'a':
         print("Good job!")
         print("◝(ᵔᗜᵔ)◜")
         score += 1
-else:
+     else:
         print("Incorrect!")
         print("(ó﹏ò｡)")
 
-Ninth_question_answer = print("The only body part fully grown from birth are your eyes.")
-print()
+     print("The only body part fully grown from birth are your eyes.")
+     print()
+     break
 
 
 
@@ -269,21 +309,29 @@ print()
 
 ## QUESTION 10 
 print("Tenth and final question:")
-Tenth_question = input("What are a groups of crows called? a) a gaggle, b) a parliment, c) a flamboyance, d) a murder")
-Tenth_question = Tenth_question.strip().lower()
-print()
 
-# OUTPUT
-if Tenth_question == 'd':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
-else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
+while True:
+     Tenth_question = input("What are a group of crows called? a) a gaggle, b) a parliment, c) a flamboyance, d) a murder")
+     Tenth_question = Tenth_question.strip().lower()
+     print()
 
-Tenth_question_answer = print("A group of crows are famously reffered to as a 'murder'.")
-print()
+# QUESTION 10 ANSWER
+     if Tenth_question not in answer_options:
+         print("Answer is not applicable. Please enter a, b, c or d.")
+         print()
+         continue
+     
+     if Tenth_question == 'd':
+      print("Good job!")
+      print("◝(ᵔᗜᵔ)◜")
+      score += 1
+     else:
+       print("Incorrect!")
+       print("(ó﹏ò｡)")
+
+     print("A group of crows are famously reffered to as a 'murder'.")
+     print()
+     break
 
     # OUTRO
 print("This is the end of the quiz.")
@@ -295,11 +343,11 @@ print()
 
 # REPLAY LOOP
 while True:
-    replay = input("Would you like to play again? ∘ ∘ ∘ ( °ヮ° )").lower().strip()
+    replay = input("Would you like to play again? (yes/no) ∘ ∘ ∘ ( °ヮ° )").lower().strip()
     
-    if replay in ["yes","y","ye","sure","ready", "yeah","absolutely","definitely"]:
-         main()
-
+    if replay in ["ye","y","yes"]:
+        main()
+        continue
     else:
         print("See you next time!")
         break

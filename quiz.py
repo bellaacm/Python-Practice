@@ -25,100 +25,138 @@ def ready():
             exit
 ready()
 
+
+
+
+
 ## SCORE 
 score = 0
 
 ## ANSWER OPTIONS 
 answer_options = ["a","b","c","d"]
 
+
+
+
+
 ## QUIZ MAIN FUNCTION
 def main():
     
-## QUESTION 1
+  ## QUESTION 1
  print()
-print("First question:")
-first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
-first_question = first_question.strip().lower()
-print()
+ print("First question:")
 
-    # QUESTION 1 ANSWER
-if first_question == 'a':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
+while True:
+        first_question = input("What is the worlds tallest building? a) Burj Khalifa, b) Shanghai Tower, c) Makkah Clock Royal Tower, d) Merdeka 118")
+        first_question = first_question.strip().lower()
+        print()
 
-elif first_question not in answer_options:
-  print("answer not applicable. Try again: ")
-  
+# QUESTION 1 ANSWER
+        if first_question not in answer_options:
+            print("Answer is not applicable. Please enter a, b, c or d.")
+            print()
+            continue 
+
+        if first_question == 'a':
+            print("Good job!")
+            print("◝(ᵔᗜᵔ)◜")
+            score += 1
+        else:
+            print("Incorrect!")
+            print("(ó﹏ò｡)")
+
+        print("As of 2026, the worlds tallest building is The Burj Khalifa in Dubai.")
+        print()
+        break 
 
 
-else:
-        print("Incorrect!")
-        print("(ó﹏ò｡)")
-
-first_question_answer = print("As of 2026, the worlds tallest building is The Burj Khalifa in Dubai.")
-print()
 
 
 ## QUESTION 2
 print("Second question:")
-second_question = input("What is the largest ocean on Earth? a) Atlantic Ocean, b) Southern Ocean, c) Pacific Ocean, d) Arctic Ocean")
-second_question = second_question.strip().lower()
-print()
 
-    # OUTPUT
-if second_question == 'c':
-    print("Good job!")
-    print("◝(ᵔᗜᵔ)◜")
-    score += 1
-else:
-    print("Incorrect!")
-    print("(ó﹏ò｡)")
+while True:
+        second_question = input("What is the largest ocean on Earth? a) Atlantic Ocean, b) Southern Ocean, c) Pacific Ocean, d) Arctic Ocean")
+        second_question = second_question.strip().lower()
+        print()
+
+# QUESTION 2 ANSWER
+        if second_question not in answer_options:
+             print("Answer is not applicable. PLease enter a ,b ,c or d.")
+             print()
+             continue
+
+        if second_question == 'c':
+         print("Good job!")
+         print("◝(ᵔᗜᵔ)◜")
+         score += 1
+        else:
+         print("Incorrect!")
+         print("(ó﹏ò｡)")
         
-second_question_answer = print("The largest ocean on Earth is the Pacific Ocean.")
-print()
+        print("The largest ocean on Earth is the Pacific Ocean.")
+        print()
+        break
 
 
 
 
 ## QUESTION 3
 print("Third question:")
-third_question = input("Who was the first person to walk on the moon? a) Valentina Tereshkova, b) Neil Armstrong, c) John Glenn, d) Yuri Gagarin")
-third_question = third_question.strip().lower()
-print()
+
+while True:
+     third_question = input("Who was the first person to walk on the moon? a) Valentina Tereshkova, b) Neil Armstrong, c) John Glenn, d) Yuri Gagarin")
+     third_question = third_question.strip().lower()
+     print()
 
 # QUESTION 3 ANSWER
-if third_question == 'b':
-    print("Good job!")
-    print("◝(ᵔᗜᵔ)◜")
-    score += 1
-else:
-  print("Incorrect!")
-  print("(ó﹏ò｡)")
+     if third_question not in answer_options:
+          print("Answer is not applicable. Please enter a, b, c or d.")
+          print()
+          continue
 
-third_question_answer = print("The first person to walk on the moon was Neil Armstrong.")
-print()
+     if third_question == 'b':
+      print("Good job!")
+      print("◝(ᵔᗜᵔ)◜")
+      score += 1
+     else:
+      print("Incorrect!")
+      print("(ó﹏ò｡)")
+
+      print("The first person to walk on the moon was Neil Armstrong.")
+      print()
+     break
+         
 
 
 
 
 ## QUESTION 4
 print("Fourth question:")
-fourth_question = input("Which superhero is known as the 'Man of Steel'? a) Batman, b) Wonder Woman, c) Superman, d) Green Lantern")
-fourth_question = fourth_question.strip().lower()
-print()
+
+while True:
+     fourth_question = input("Which superhero is known as the 'Man of Steel'? a) Batman, b) Wonder Woman, c) Superman, d) Green Lantern")
+     fourth_question = fourth_question.strip().lower()
+     print()
 
 # QUESTION 4 ANSWER 
-if fourth_question == 'c':
-   print("Good job!")
-   print("◝(ᵔᗜᵔ)◜")
-   score += 1
-else:
-   print("Incorrect!")
-   print("(ó﹏ò｡)")
 
-fourth_question_answer = print("Superman is known as the 'Man of Steel'.")
-print()
+     if fourth_question not in answer_options:
+      print("Answer is not applicable. Please enter a, b, c or d.")
+      print()
+      continue
+
+     if fourth_question == 'c':
+      print("Good job!")
+      print("◝(ᵔᗜᵔ)◜")
+      score += 1
+     else:
+      print("Incorrect!")
+      print("(ó﹏ò｡)")
+ 
+      fourth_question_answer = print("Superman is known as the 'Man of Steel'.")
+      print()
+     break
 
 
 

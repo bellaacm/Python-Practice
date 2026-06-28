@@ -127,8 +127,6 @@ def main():
          
 
 
-
-
 ## QUESTION 4
      print("Fourth question:")
 
@@ -198,17 +196,17 @@ def main():
 
     # QUESTION 6 ANSWER
          if Sixth_question not in answer_options:
-             print("Answer is not applicable. Please enter a, b, c or d.")
-             print()
-             continue
+          print("Answer is not applicable. Please enter a, b, c or d.")
+           print()
+           continue
      
          if Sixth_question == 'd':
-            print("Good job!")
-            print("◝(ᵔᗜᵔ)◜")
-            score += 1
+          print("Good job!")
+          print("◝(ᵔᗜᵔ)◜")
+          score += 1
          else:
-            print("Incorrect!")
-            print("(ó﹏ò｡)")
+          print("Incorrect!")
+          print("(ó﹏ò｡)")
      
          print("It takes 365 days for the Earth to orbit the Sun.")
          print()
@@ -339,8 +337,11 @@ def main():
      print("(ㅅ´ ˘ `)")
      print()
 
+# RUNNING QUIZ ONCE 
+main()
+
 # REPLAY LOOP
-     while True:
+while True:
          replay = input("Would you like to play again? (yes/no) ∘ ∘ ∘ ( °ヮ° )").lower().strip()
     
          if replay in ["ye","y","yes"]:

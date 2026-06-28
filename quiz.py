@@ -26,21 +26,17 @@ def ready():
 ready()
 
 
-
-
-
-## SCORE 
-score = 0
-
-## ANSWER OPTIONS 
-answer_options = ["a","b","c","d"]
-
-
-
-
-
 ## QUIZ MAIN FUNCTION
 def main():
+
+     ## SCORE 
+     score = 0
+     
+     
+     ## ANSWER OPTIONS 
+     answer_options = ["a","b","c","d"]
+
+
      ## QUESTION 1
      print()
      print("First question:")
@@ -196,7 +192,7 @@ def main():
 
     # QUESTION 6 ANSWER
          if Sixth_question not in answer_options:
-          print("Answer is not applicable. Please enter a, b, c or d.")
+           print("Answer is not applicable. Please enter a, b, c or d.")
            print()
            continue
      

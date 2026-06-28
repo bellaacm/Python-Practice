@@ -7,7 +7,7 @@ name = input("What is your name?")
 print(f"Hello {name}, welcome to this quiz!")
 print()
 print("This will be a 10 question quiz assesing your general knowledge.")
-print("You will have to enter the letter of your answer from the given options. ( ex:'a' or 'd')")
+print("You will have to enter the letter of your answer from the given options of each question. ( ex:'a' or 'd')")
 print("( •̀ ᗜ •́ )ᕗ")
 print()
 

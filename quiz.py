@@ -338,7 +338,6 @@ def main():
      print(f"Congratulations! Thank you {name} for participating in this quiz")
      print("(ㅅ´ ˘ `)")
      print()
-     main() 
 
 # REPLAY LOOP
      while True:

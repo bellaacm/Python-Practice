@@ -2,7 +2,6 @@
 # this is a 10 question quiz involving a large variety of general knowledge topics 
 
 ## QUIZ INTRODUCTION 
-
 name = input("What is your name?")
 print(f"Hello {name}, welcome to this quiz!")
 print()
@@ -325,7 +324,7 @@ def main():
          print()
          break
 
-    # OUTRO
+## OUTRO
      print("This is the end of the quiz.")
      print(f"You scored {score} out of 10.") 
      print()
